@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>AirGuard</title>
+        <link rel="icon" href="logo11.png" type="image">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Edu+TAS+Beginner:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link rel="stylesheet" href="lib/animate/animate.min.css"/>
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid header-top">
+            <div class="container d-flex align-items-center">
+                <div class="d-flex align-items-center h-100">
+                    <a href="#" class="navbar-brand" style="height: 125px;">
+                        <h1 class="text-primary mb-0"><i class="fas fa-user-shield"></i> AirGuard</h1>
+                        <!-- <img src="img/logo.png" alt="Logo"> -->
+                    </a>
+                </div>
+                <div class="w-100 h-100">
+                    <div class="topbar px-0 py-2 d-none d-lg-block" style="height: 45px;">
+
+                    </div>
+                    <div class="nav-bar px-0 py-lg-0" style="height: 80px;">
+                        <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-lg-end">
+                            <a href="#" class="navbar-brand-2">
+                                <h1 class="text-primary mb-0"><i class="fas fa-bolt"></i> AirGuard</h1>
+                                <!-- <img src="img/logo.png" alt="Logo"> -->
+                            </a>  
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                                <span class="fa fa-bars"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarCollapse">
+                                <div class="navbar-nav mx-0 mx-lg-auto bg-white">
+                                    <a href="#" class="nav-item nav-link active">Home</a>
+                                    <a href="#" class="nav-item nav-link"><i class="fas fa-user"></i></a>
+                                    <div class="nav-item dropdown">
+                                        <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                            <span class="dropdown-toggle">Systems</span>
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <a href="#" class="dropdown-item">System1</a>
+                                            <a href="#" class="dropdown-item">System2</a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="nav-item nav-link">Contact</a>
+                                    <a href="#" class="nav-item nav-link"><i class="fas fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center bg-primary">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="btn bg-light border nput-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+
+        <!-- Carousel Start -->
+        <div class="header-carousel owl-carousel overflow-hidden">
+            <div class="header-carousel-item hero-section">
+                <div class="hero-bg-half-1"></div>
+                <div class="hero-shape-1"></div>
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-lg-7 animated fadeInLeft">
+                                <div class="text-sm-center text-md-start">
+                                    <h4 class="text-white text-uppercase fw-bold mb-4">AI-Powered Indoor Care</h4>
+                                    <h1 class="display-2 text-white mb-4">Advanced Air and Plant Monitoring Solutions</h1>
+                                    <p class="mb-5 fs-5">AirGuard’s AI and sensor suite delivers real-time monitoring and optimization for air quality and plant health, ensuring a balanced and healthy indoor environment.
+                                    </p>
+<!--                                    <div class="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4">-->
+<!--                                        <a class="btn btn-light py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Watch Video</a>-->
+<!--                                        <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="#">Learn More</a>-->
+<!--                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-carousel-item hero-section">
+                <div class="hero-bg-half-2"></div>
+                <div class="hero-shape-2"></div>
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-lg-7 animated fadeInLeft">
+                                <div class="text-sm-center text-md-start">
+                                    <h4 class="text-white text-uppercase fw-bold mb-4">Eco-Friendly Plant & Water Care</h4>
+                                    <h1 class="display-2 text-white mb-4">Precision in Soil and Water Quality Management</h1>
+                                    <p class="mb-5 fs-5">With NPK, pH, and water quality sensors, AirGuard monitors soil health and water quality, helping you maintain vibrant plants and a sustainable indoor ecosystem.
+                                    </p>
+<!--                                    <div class="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4">-->
+<!--                                        <a class="btn btn-light py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Watch Video</a>-->
+<!--                                        <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="#">Learn More</a>-->
+<!--                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+
+        <!-- About Start -->
+        <div class="container-fluid about py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-7 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="h-100">
+                            <h4 class="text-primary">About Us</h4>
+                            <h1 class="display-4 mb-4">Smart Solutions for Healthier Indoor Spaces</h1>
+                            <div class="row g-4 mb-4">
+                                <div class="col-md-6">
+                                    <a href="#" class="d-flex">
+                                        <span class="fas fa-lungs fa-3x me-3"></span>
+                                        <h4 class="mb-0">Take care of indoor air quality</h4>
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="#" class="d-flex">
+                                        <span class="fas fa-water fa-3x me-3"></span>
+                                        <h4 class="mb-0">Test water quality</h4>
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="#" class="d-flex">
+                                        <span class="fas fa-seedling fa-3x me-3"></span>
+                                        <h4 class="mb-0">Take care of plants</h4>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="mb-4">AirGuard is designed to optimize indoor air quality and plant health using a blend of embedded systems and machine learning. With three Arduino Uno units and a Raspberry Pi working together, AirGuard continuously monitors air pollutants, soil nutrients, and water quality, offering a comprehensive solution for sustainable indoor care.
+                            </p>
+                            <div class="text-dark mb-4">
+                                <p class="fs-5"><span class="fa fa-check text-primary me-2"></span> **AI-driven air quality adjustments** for pollutant-free, balanced indoor environments.</p>
+                                <p class="fs-5"><span class="fa fa-check text-primary me-2"></span> **Real-time plant disease detection** using an integrated camera and AI on Raspberry Pi.</p>
+                                <p class="fs-5"><span class="fa fa-check text-primary me-2"></span> **Soil quality testing** with NPK and pH sensors for optimal plant growth.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-5 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="position-relative h-100">
+                            <img src="img/about-1.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="">
+                            <div class="bg-white">
+                                <div class="position-absolute pt-3 bg-white" style="width: 50%; left: 0; bottom: 0;">
+                                    <div class="bg-primary p-4">
+<!--                                        <h4 class="display-2 mb-0">25+</h4>-->
+                                        <p class="text-white fs-5 mb-0">Healthier tomorrow</p>
+                                    </div>
+                                </div>
+                                <div class="position-absolute p-3 bg-white pb-0 pe-0" style="width: 50%; bottom: 0; right: 0;">
+                                    <img src="img/about-2.jpg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Banner Start -->
+<!--         <div class="container-fluid banner py-5 wow zoomIn" data-wow-delay="0.2s">-->
+<!--            <div class="banner-design-1"></div>-->
+<!--            <div class="banner-design-2"></div>-->
+<!--            <div class="container py-5">-->
+<!--                <div class="row g-5">-->
+<!--                    <div class="col-lg-8">-->
+<!--                        <div class="">-->
+<!--                            <h4 class="text-white">Contact With Me</h4>-->
+<!--                            <h1 class="display-4 text-white mb-0">We provide professional electric services for our customer</h1>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-lg-4">-->
+<!--                        <div class="d-flex align-items-center justify-content-lg-end h-100">-->
+<!--                            <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="#">EXPLORE MORE</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--         </div>-->
+        <!-- Banner End -->
+
+
+        <!-- Services Start -->
+        <div class="container-fluid service py-5">
+            <div class="container py-5">
+                <div class="d-flex flex-column mx-auto text-center mb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Our Services</h4>
+                    <h1 class="display-4 mb-4">Comprehensive Indoor Care Services</h1>
+                    <p class="mb-0">Our advanced services support every aspect of indoor care, including air quality monitoring, water testing, and AI-driven plant health solutions for sustainable indoor environments.
+                    </p>
+                </div>
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-3 wow fadeInLeft" data-wow-delay="0.2s">
+                        <ul class="nav">
+                            <li class="nav-item me-lg-0 mb-4">
+                                <a class="py-3 px-5 active" data-bs-toggle="pill" href="#ServiceTab-1">
+                                    <span>Air Quality</span>
+                                </a>
+                            </li>
+                            <li class="nav-item me-lg-0 mb-4">
+                                <a class="py-3 px-5" data-bs-toggle="pill" href="#ServiceTab-2">
+                                    <span>Water Quality</span>
+                                </a>
+                            </li>
+                            <li class="nav-item me-lg-0 mb-4 mb-lg-0">
+                                <a class="py-3 px-5" data-bs-toggle="pill" href="#ServiceTab-3">
+                                    <span>Plant Health</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-9 wow fadeInRight" data-wow-delay="0.3s">
+                        <div class="tab-content">
+                            <div id="ServiceTab-1" class="tab-pane fade show p-0 active">
+                                <div class="service-carousel owl-carousel">
+                                    <div class="service-item">
+                                        <img src="img/commercial-1.jpg" class="img-fluid w-100" alt="">
+                                        <div class="border border-top-0 p-4">
+                                            <h4 class="mb-3">Air Quality Control</h4>
+                                            <p class="mb-4">Utilizes sensors to continuously monitor and optimize indoor air quality by detecting pollutants, humidity, and particulate matter.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ServiceTab-2" class="tab-pane fade show p-0">
+                                <div class="service-carousel owl-carousel">
+                                    <div class="service-item">
+                                        <img src="img/commercial-2.jpg" class="img-fluid w-100" alt="">
+                                        <div class="border border-top-0 p-4">
+                                            <h4 class="mb-3">Water Quality Testing</h4>
+                                            <p class="mb-4">Ensure your plants get high-quality water while monitoring if it’s drinkable and safe for people, with real-time checks on purity and pH levels.
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div id="ServiceTab-3" class="tab-pane fade show p-0">
+                                <div class="service-carousel owl-carousel">
+                                    <div class="service-item">
+                                        <img src="img/commercial-3.jpg" class="img-fluid w-100" alt="">
+                                        <div class="border border-top-0 p-4">
+                                            <h4 class="mb-3">Plant Health Monitoring</h4>
+                                            <p class="mb-4">Combines AI and a camera to detect plant diseases early, as well as NPK sensors to check soil nutrient levels for optimal growth.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services End -->
+
+        <!-- Projects Start -->
+        <div class="container-fluid projects bg-light py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div>
+                            <h4 class="text-primary">Our Innovations</h4>
+                            <h1 class="display-4 mb-4">Building Smart Indoor Environments</h1>
+                            <p class="mb-5">Explore our ongoing projects and technology solutions, each designed to push the boundaries of indoor environment control.</p>
+                            <ul class="nav">
+                                <li class="nav-item bg-white mb-4 w-100">
+                                    <a class="d-flex align-items-center h4 mb-0 p-3 active" data-bs-toggle="pill" href="#ProjectsTab-1">
+                                        <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-seedling small"></span></div><span>Smart Plant Care</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item bg-white mb-4 w-100">
+                                    <a class="d-flex align-items-center h4 mb-0 p-3" data-bs-toggle="pill" href="#ProjectsTab-2">
+                                        <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-lungs small"></span></div><span>Air Quality Optimization</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item bg-white mb-4 w-100">
+                                    <a class="d-flex align-items-center h4 mb-0 p-3" data-bs-toggle="pill" href="#ProjectsTab-3">
+                                        <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-water small"></span></div><span>Water Quality Solutions</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="tab-content">
+                            <div id="ProjectsTab-1" class="tab-pane fade show p-0 active">
+                                <div class="projects-item">
+                                    <img src="img/commercial-3.jpg" class="img-fluid w-100" alt="">
+                                    <div class="projects-content bg-white p-4">
+                                        <h4 class="mb-3">Smart Plant Care</h4>
+                                        <p class="mb-4">Utilizing AI and sensor data to monitor soil quality and detect plant diseases, ensuring healthy plant growth.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ProjectsTab-2" class="tab-pane fade show p-0">
+                                <div class="projects-item">
+                                    <img src="img/commercial-1.jpg" class="img-fluid w-100" alt="">
+                                    <div class="projects-content bg-white p-4">
+                                        <h4 class="mb-3">Air Quality Optimization</h4>
+                                        <p class="mb-4">Advanced sensors and machine learning keep indoor air safe and pollutant-free for a healthier living space.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ProjectsTab-3" class="tab-pane fade show p-0">
+                                <div class="projects-item">
+                                    <img src="img/commercial-2.jpg" class="img-fluid w-100" alt="">
+                                    <div class="projects-content bg-white p-4">
+                                        <h4 class="mb-3">Water Quality Solutions</h4>
+                                        <p class="mb-4">Integrated water sensors test and adjust quality for optimal hydration, creating the best environment for plant life.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Projects End -->
+
+
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-body"><a href="#" class=" text-white"><i class="fas fa-user-shield"></i> AirGuard</a></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
